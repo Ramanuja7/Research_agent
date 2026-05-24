@@ -1,0 +1,25 @@
+# Secret credentials - NEVER upload this
+.env
+
+# Virtual environment - too large to upload
+venv/
+
+# ChromaDB vector store - auto regenerates
+chroma_db/
+
+# Output reports
+outputs/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# VS Code settings
+.vscode/
+
+# Windows files
+Thumbs.db
+desktop.ini

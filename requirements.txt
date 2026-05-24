@@ -1,0 +1,7 @@
+streamlit
+arxiv
+ibm-watsonx-ai
+python-dotenv
+chromadb
+requests
+sentence-transformers
