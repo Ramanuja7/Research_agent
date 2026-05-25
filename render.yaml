@@ -2,8 +2,7 @@ services:
   - type: web
     name: research-agent
     runtime: python
-    pythonVersion: "3.11.0"
-    buildCommand: pip install -r requirements.txt
+    buildCommand: pip install --upgrade pip && pip install -r requirements.txt
     startCommand: streamlit run ui/app.py --server.port $PORT --server.address 0.0.0.0
     envVars:
       - key: WATSONX_APIKEY
@@ -12,3 +11,5 @@ services:
         sync: false
       - key: WATSONX_URL
         sync: false
+      - key: PYTHON_VERSION
+        value: 3.11.9
